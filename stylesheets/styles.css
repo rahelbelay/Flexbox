@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    
+}
+div {
+    /* border-width: 5px solid;
+    border-style:  solid; */
+    border: 5px solid red;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    border-color:  #f80;
+    display: flex;
+
+    justify-content: center;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* where to line up on cross axis */
+    align-items: flex-start;
+
+}
+
+
+.child {
+    border-color:#fe0;
+    height: 150px;
+    width: 150px;
+}
+
+.blacksheep {
+    border-color: red;
+    order: 10;
+    align-self: flex-end;
+}
+
+.copycat{
+    border-color: blue;
+    order: 20;
+    align-self: center;
+}
